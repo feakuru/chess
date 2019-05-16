@@ -53,3 +53,15 @@ bool Rook::canMove(char rowFrom, char laneFrom,
                    char rowTo, char laneTo) {
     return (rowTo == rowFrom) || (laneTo == laneFrom);
 }
+
+bool Knight::canMove(char rowFrom, char laneFrom,
+                     char rowTo, char laneTo) {
+    return (abs((rowTo - rowFrom == 2)) && (abs(laneTo - laneFrom == 1))) || 
+           (abs(rowTo - rowFrom == 1) && (abs(laneTo - laneFrom == 2)));
+}
+
+bool Bishop::canMove(char rowFrom, char laneFrom,
+                     char rowTo, char laneTo) {
+    return (abs(rowTo - rowFrom) == abs(laneTo - laneFrom));
+}
+
