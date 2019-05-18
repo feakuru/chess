@@ -68,8 +68,7 @@ bool Bishop::canMove(char rowFrom, char laneFrom,
 bool Queen::canMove(char rowFrom, char laneFrom,
                      char rowTo, char laneTo) {
     return ((abs(rowTo - rowFrom) == abs(laneTo - laneFrom)) ||
-            (abs(rowTo - rowFrom) && !(laneTo - laneFrom)) ||
-            (abs(laneTo - laneFrom) && !(rowTo - rowFrom)));
+            (rowTo == rowFrom) || (laneTo == laneFrom));
 }
 
 bool King::canMove(char rowFrom, char laneFrom,
