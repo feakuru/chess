@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     Pawn p1(true);
     cout << "We have a " << p1.getName() << " with "
          << p1.getPrice() << " price!" << endl;

@@ -12,7 +12,7 @@ public:
     Figure(int _price = 0,
            const std::string _name = "",
            bool _isWhite = true);
-    virtual ~Figure();
+    virtual ~Figure() {};
 
     bool isWhite();
     int getPrice();
