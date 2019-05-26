@@ -14,4 +14,4 @@ test: test.o figure.o
 	$(CXX) -o test test.o figure.o
 
 clean:
-	rm *.o test chess
+	rm *.o test chess || true
