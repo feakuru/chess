@@ -11,7 +11,7 @@ test.o: test.cpp
 	$(CXX) -c test.cpp
 
 test: test.o figure.o
-	$(CXX) -o test test.o figure.o
+	$(CXX) -o test test.o figure.o -lcppunit
 
 clean:
-	rm *.o test chess || true
+	rm -f *.o *.gch test chess
