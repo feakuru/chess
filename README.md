@@ -1,5 +1,7 @@
 # Chess
 
+[![CircleCI](https://circleci.com/gh/feakuru/chess.svg?style=svg)](https://circleci.com/gh/feakuru/chess)
+
 This is a simple chess implementation that can be used as an example to explain some basic concepts of programming.
 
 ## Testing
