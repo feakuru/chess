@@ -1,0 +1,14 @@
+jobs:
+  test:
+    docker:
+      - image: circleci/buildpack-deps:bionic
+    steps:
+      - checkout
+      - run: sudo apt install libcppunit-dev
+      - run: make test
+      - run: ./test
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test
